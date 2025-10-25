@@ -36,6 +36,9 @@ app.post('/Search', urlencodedParser, async(req, res) => {
     if(name == ""){
         name = "mary"
     }
+    if(name == null){
+        name = "mary"
+    }
     let url = `https://www.behindthename.com/api/lookup.json?name=${name}&key=ni956886090`
     let respone = await fetch(url);
     let usage = await respone.json();
