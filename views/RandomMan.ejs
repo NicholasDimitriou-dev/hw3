@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs") %>
+</head>
+</head>
+<body>
+    <%- include("partials/nav.ejs") %>
+    <div class="apiReturn">
+        <%= usage[0].name %> ,
+        <%= usage[0].gender %><br>
+        <% for(let i of usage[0].usages) { %>
+        <%= i.usage_code %> ,
+        <%= i.usage_full %> ,
+        <%= i.usage_gender %><br>
+        <% } %>
+    </div>
+    
+     <%- include("partials/footer.ejs") %>
+</body>
+</html>

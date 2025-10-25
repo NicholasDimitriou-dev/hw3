@@ -1,0 +1,50 @@
+.apiReturn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+    color: brown;
+    font-size: 45;
+}
+/* 7 */
+.input{
+    background-color: blueviolet;
+}
+/* 8 */
+body{
+    background-color: aquamarine;
+    background-size: cover;
+}
+/* 10 */
+h4{
+    color: red;
+}
+/* 11*/
+img{
+    height: 300px;
+    width: 300px;
+}
+/* 13 */
+h1{
+    color:blue;
+}
+/* 14 */
+h1:hover{
+    color:red;
+}
+/* 15 */
+.apiReturn:hover{
+    color:black;
+}
+/* 16 */
+button{
+    color: purple;
+    border: rgb(30, 175, 175) solid;
+}
+/* 18 */
+button:hover{
+    color:blue;
+    border: rgb(30, 175, 175) dashed; 
+}
+/* 20 */
