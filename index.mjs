@@ -2,6 +2,7 @@ import express from 'express';
 const bodyParser = (await import('body-parser')).default;
 const {check, validationResult} = (await import('express-validator')).default;
 import fetch from 'node-fetch';
+const generator = (await import("fake-names")).default;
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 app.set("view engine", "ejs");
@@ -64,6 +65,12 @@ app.get('/RandomMan', async (req, res) => {
     let usage = await respone.json();
     res.render('RandomMan.ejs', {usage});
 });
+app.get('/FakeName', (req, res)=>{
+    let name = generator.getName()
+    console.log(name)
+    res.render('FakeName.ejs', {name});
+})
+
 //starts the web server
 app.listen(3000, () => {
    console.log('server started');
